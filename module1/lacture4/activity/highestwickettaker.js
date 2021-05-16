@@ -1,4 +1,4 @@
-let matchlink ="https://www.espncricinfo.com/series/ipl-2020-21-1210595/delhi-capitals-vs-mumbai-indians-final-1237181/full-scorecard";
+let matchlink ="https://www.espncricinfo.com/series/ipl-2020-21-1210595/delhi-capitals-vs-sunrisers-hyderabad-qualifier-2-1237180/full-scorecard";
 const request=require("request");
 const fs =require("fs");
 const cheerio= require("cheerio");
