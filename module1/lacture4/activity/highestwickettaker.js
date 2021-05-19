@@ -1,4 +1,4 @@
-let matchlink ="https://www.espncricinfo.com/series/ipl-2020-21-1210595/delhi-capitals-vs-sunrisers-hyderabad-qualifier-2-1237180/full-scorecard";
+let matchlink ="https://www.cricbuzz.com/live-cricket-scorecard/35898/zim-vs-pak-2nd-test-pakistan-tour-of-zimbabwe-2021";
 const request=require("request");
 const fs =require("fs");
 const cheerio= require("cheerio");
@@ -8,9 +8,8 @@ request(matchlink , cb);
 function cb(error , response, data){
     //console.log(" got the data");
     //console.log(data);
-    fs.writeFileSync("./match.html", data);
+    //fs.writeFileSync("./match.html", data);
     getHighestWicketTacker(Data);
-
 }
 // let htmlkaData=fs.readFileSync("./match.html","utf8");
  //let myDocument=cheerio.load(htmlkaData);
@@ -64,8 +63,8 @@ let highestWicketTakenName;
    
    }
    console.log("Name Of Highest Wicket Taker = " + highestWicketTakenName);
-    console.log("Wickets Taken = " + highestWicketsTaken)
-    console.log("Economy = " + economyOfHighestWicketTaker)
+    console.log("Wickets Taken = " + highestWicketsTaken);
+    console.log("Economy = " + economyOfHighestWicketTaker);
 
 
 }

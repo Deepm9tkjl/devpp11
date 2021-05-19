@@ -5,9 +5,10 @@
 const fs = require("fs");
 const cheerio = require("cheerio");
 
-
+ 
 let htmlKaData = fs.readFileSync("./index.html" , "utf8");
-// console.log(htmlKaData); // we have stringified html file !!!
+//console.log(htmlKaData); 
+//we have stringified html file !!!
 
 // html file is loaded in cheerio
 let myDocument = cheerio.load(htmlKaData);
@@ -16,4 +17,7 @@ let myDocument = cheerio.load(htmlKaData);
 
 let h1KaData = myDocument("h1").text();
 // console.log(h1Element); element => cheerio => object form me data
-console.log(h1KaData);
+//console.log(h3KaData);
+let secondPTag=myDocument("p")["1"];
+  console.log(myDocument(secondPTag).text());
+//console.log(myDocument("ul>a").text());
