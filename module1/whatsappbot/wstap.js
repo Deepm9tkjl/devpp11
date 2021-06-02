@@ -7,19 +7,20 @@ const puppeteer = require("puppeteer");
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     await page.setUserAgent(
-      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
-    );
-
+      'Mozilla/5.0 (Windows NT 6.2; WOW64' 
+        
+    )
+    
     //Navigates to Whatsapp
     await page.goto("https://web.whatsapp.com/");
 
     // //Searches person by title
-    await page.waitForSelector("._1MXsz");
+    await page.waitForSelector("_2_1wd copyable-text selectable-text");
     await delay(5000);
 
     //Change to contact you want to send messages to
-    const contactName = "Caca";
-    await page.click(`span[title='${Aman}']`);
+    const contactName = "Aman";
+    await page.click(`span[title='${contactName}']`);
     await page.waitForSelector("._3uMse");
 
     //Finds the message bar and focuses on it

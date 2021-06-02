@@ -8,7 +8,7 @@ async function scrape(url) {
   const target = await page.$("span [title='Deep']");
   await target.click();
   const inp = await page.$(
-    "_2_1wd copyable-text selectable-text"
+    "#main > footer > div._3ee1T._1LkpH.copyable-area > div._3uMse > div > div._3FRCZ.copyable-text.selectable-text"
   );
 
   for (let i = 0; i < 100; i++) {
