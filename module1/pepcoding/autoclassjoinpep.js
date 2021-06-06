@@ -53,7 +53,7 @@ let pag = await browser.newPage();
     await pag.waitForTimeout(2000);
     await pag.waitForSelector('#loginForm > div > div:nth-child(1) > div > label > input',{visible:true});
     await pag.click('#loginForm > div > div:nth-child(1) > div > label > input');
-    await pag.type('#loginForm > div > div:nth-child(1) > div > label > input',id);
+    await pag.type('#loginForm > div > div:nth-child(1) > div > label > input',int);
     await pag.type('input[aria-label=Password]',pw);
    
    await Promise.all([

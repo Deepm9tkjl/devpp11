@@ -13,9 +13,10 @@ const pw = "Deepak@786";
       });
     let pages = await browser.pages();
     let tab = pages[0];
-    
-    await tab.goto('https://www.linkedin.com/authwall?trk=gf&trkInfo=AQELgDGOS2SzTQAAAXnTjy-YcdKOFE_8a4CNGJOeKm3pAMNqqIaIBuxI1OTpl5PzVXWKg6GwaJ5YkmP86ndUTICx6QdN0Hy4kRfOYalFwEwh6kttbQXtT-_MMkr72mBKlNaaa2U=&originalReferer=https://www.pepcoding.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpepcoding-education%2F')
-    await tab.click('button[ data-tracking-control-name="auth_wall_desktop_company-login-toggle" ]');
+    // await tab.goto('https://www.facebook.com/pepcoding/');
+    // await tab.waitForSelector('#u_0_j_a5 > div > div > div:nth-child(1) > div > span > button',{visible:true});
+    // await tab.click('#u_0_j_a5 > div > div > div:nth-child(1) > div > span > buttono=AQELgDGOS2SzTQAAAXnTjy-YcdKOFE_8a4CNGJOeKm3pAMNqqIaIBuxI1OTpl5PzVXWKg6GwaJ5YkmP86ndUTICx6QdN0Hy4kRfOYalFwEwh6kttbQXtT-_MMkr72mBKlNaaa2U=&originalReferer=https://www.pepcoding.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpepcoding-education%2F')
+     await tab.click('button[ data-tracking-control-name="auth_wall_desktop_company-login-toggle" ]');
     await tab.type('input[placeholder="Email"]',yt);
     await tab.type('input[placeholder="Password"]',pw);
     await tab.click('button[id="login-submit"]');
