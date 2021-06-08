@@ -3,8 +3,7 @@ const puppeteer = require("puppeteer");
 
 const id = "deepmkjl499@gmail.com";
 const yt="deepak841999@gmail.com";
-const pw = "Deepak@
-786";
+const pw = 'Deepak@786';
 
 //let challenges = require("./challenges");
 

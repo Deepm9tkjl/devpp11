@@ -1,9 +1,9 @@
 //autoallcontactandclassjoinpep.js
 const puppeteer = require("puppeteer");
-const int="insta";
+const int="de_ep9294";
 const id = "deepmkjl499@gmail.com";
 const yt="deepak841999@gmail.com";
-const pw = "password";
+const pw = "Deepak@786";
 const tw="@Deep00482792";
 
 //let challenges = require("./challenges");
