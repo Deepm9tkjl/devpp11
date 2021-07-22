@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Dragon Ball</title>
+    <link rel="stylesheet" type="text/css" href="dragon-ball.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120198720-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120198720-1');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="navBar">
+        <div class="navItem score left">0/25</div>
+        <div class="navItem highScore left">High Score: </div>
+        <div class="navItem timer right">--:--</div>
+    </div>
+
+    <div class="ball_play_canvas">
+        <div class="dragon_ball"></div>
+    </div>
+
+    <script src="dragon-ball.js"></script>
+
+</body>
+
+</html>
