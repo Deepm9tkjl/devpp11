@@ -1,21 +1,11 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
-import Calendar from "react-calendar";
 
-const ReactCalendar = () => {
-  const [date, setDate] = useState(new Date());
+import React from "react";
 
-  const onChange = date => {
-    setDate(date);
-  };
+import ReactDOM from "react-dom";
 
-  return (
-    <div>
-      <Calendar showWeekNumbers onChange={onChange} value={date} />
-      {console.log(date)}
-      {date.toString()}
-    </div>
-  );
-};
+import App from "./App";
 
-render(<ReactCalendar />, document.querySelector("#root"));
+ReactDOM.render(
+  <App />,
+  document.querySelector("#root")
+);
